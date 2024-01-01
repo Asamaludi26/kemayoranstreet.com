@@ -41,15 +41,6 @@ const NavbarComponent = () => {
                   );
                 })} 
                 
-                <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                {navLinks.map((link)=>{
-                  return(
-                    <div key={link.id}>
-                      <NavLink to={link.path}>{link.text}</NavLink>
-                    </div>
-                  );
-                })}
-                </NavDropdown>
               </Nav>
 
               <div className="text-center">
