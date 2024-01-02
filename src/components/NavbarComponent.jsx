@@ -5,13 +5,13 @@ import { navLinks } from "../data/index";
 import { NavLink } from "react-router-dom";
 
 const NavbarComponent = () => {
-  const[changeColor, setChangeColor] = useState(false);
+  const[changeColor, setChangeColor, setChangePos] = useState(true);
 
   const changeBackgroundColor = ()=> {
-    if (window.scrollY > 10){
+    if (window.scrollY >= 10){
       setChangeColor(true);
-    }else{
-      setChangeColor(false);
+    }else {
+       setChangeColor(false);
     }
   };
 
@@ -22,14 +22,21 @@ const NavbarComponent = () => {
   });
 
   return (
-    <div className="text-center">
-        <Navbar expand="lg" className={changeColor ? "color-active" : ""}>
-          <Container>
+    <div className="text-left">
+        <Navbar expand="lg" className={changeColor ? "color-active" : "bg-body-secondary position-sticky"}>
+          <Container >
             <Navbar.Brand href="#home" className="fs-5 fw-bold">
+            <img
+              src="/public/hero.png"
+              width="35"
+              height="35"
+              className="d-inline-block align-top"
+              alt="React Bootstrap logo"
+            />
             KemayoranStreet</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="mx-auto">
+              <Nav className="me-auto">
                 {navLinks.map((link)=>{
                   return(
                     <div className="nav-link" key={link.id}>
@@ -40,7 +47,7 @@ const NavbarComponent = () => {
                     </div>
                   );
                 })} 
-                
+
               </Nav>
 
               <div className="text-center">

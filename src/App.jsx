@@ -6,7 +6,7 @@ import{Routes, Route} from 'react-router-dom'
 import NavbarComponent from './components/NavbarComponent';
 // pages
 import HomePage from './pages/HomePage'
-import KelasPage from './pages/KelasPage';
+import TemaPage from './pages/TemaPage';
 import TestiPage from './pages/TestiPage';
 import FaqPage from './pages/FaqPage';
 import SnKPage from './pages/SnKPage';
@@ -20,11 +20,11 @@ function App() {
 
       <Routes>
         <Route path='/' Component={HomePage} />
-        <Route path='/Kelas' Component={KelasPage} />
+        <Route path='/Tema' Component={TemaPage} />
         <Route path='/Testimonial' Component={TestiPage} />
         <Route path='/FAQ' Component={FaqPage} />
         <Route path='/SNK' Component={SnKPage} />
-        {/* <Route path='/' Component={KelasPage} /> */}
+        {/* <Route path='/' Component={TemaPage} /> */}
     </Routes>
 
     {/* <FooterComponents /> */}
