@@ -24,7 +24,6 @@ function App() {
         <Route path='/Testimonial' Component={TestiPage} />
         <Route path='/FAQ' Component={FaqPage} />
         <Route path='/SNK' Component={SnKPage} />
-        {/* <Route path='/' Component={TemaPage} /> */}
     </Routes>
 
     {/* <FooterComponents /> */}

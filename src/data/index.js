@@ -8,6 +8,10 @@ import KelasImage7 from "../assets/img/kelas/kelas-7.jpg";
 import KelasImage8 from "../assets/img/kelas/kelas-8.jpg";
 import KelasImage9 from "../assets/img/kelas/kelas-9.jpg";
 
+import RoleImage1 from "../assets/img/role/role-1.svg";
+import RoleImage2 from "../assets/img/role/role-2.svg";
+import RoleImage3 from "../assets/img/role/role-3.svg";
+
 import People1 from "../assets/img/testimonial/people-1.jpg";
 import People2 from "../assets/img/testimonial/people-2.jpg";
 import People3 from "../assets/img/testimonial/people-3.jpg";
@@ -40,7 +44,20 @@ export const navLinks = [
   },
 ];
 
-export const semuaKelas = [
+export const navDropdowns = [
+  {
+    id: 1,
+    path: "",
+    text: "Home",
+  },
+  {
+    id: 2,
+    path: "tema",
+    text: "Tema",
+  },
+]
+
+export const semuaTema = [
   {
     id: 1,
     image: KelasImage1,
@@ -160,7 +177,7 @@ export const semuaKelas = [
   },
 ];
 
-export const kelasTerbaru = [
+export const temaGratis = [
   {
     id: 1,
     image: KelasImage1,
@@ -240,6 +257,23 @@ export const kelasTerbaru = [
     delay: "400",
   },
 ];
+export const roleKamu = [
+  {
+    id: 1,
+    image: RoleImage1,
+    delay: "",
+  },
+  {
+    id: 2,
+    image: RoleImage2,
+    delay: "",
+  },
+  {
+    id: 3,
+    image: RoleImage3,
+    delay: "",
+  },
+]
 
 export const testimonial = [
   {
